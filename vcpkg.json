@@ -1,0 +1,28 @@
+{
+  "name": "webrtc-demo-next",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "abseil",
+    "curl",
+    {
+      "name": "ffmpeg",
+      "default-features": false,
+      "features": [
+        "avcodec",
+        "avformat",
+        "swresample",
+        "swscale"
+      ]
+    },
+    {
+      "name": "ixwebsocket",
+      "default-features": false,
+      "features": [
+        "openssl"
+      ]
+    },
+    "jsoncpp",
+    "openssl",
+    "webrtc"
+  ]
+}
