@@ -15,7 +15,7 @@ find_package(ixwebsocket CONFIG REQUIRED)
 find_package(jsoncpp CONFIG REQUIRED)
 find_package(OpenSSL REQUIRED)
 find_package(Python3 COMPONENTS Interpreter)
-find_package(webrtc CONFIG REQUIRED)
+find_package(unofficial-webrtc CONFIG REQUIRED)
 
 set(WEBRTC_APPRTC_SAMPLE_VIDEO ""
     CACHE FILEPATH "Optional MP4 sample used by local validation and e2e tests.")
@@ -50,7 +50,7 @@ target_link_libraries(webrtc_apprtc_cli
         JsonCpp::JsonCpp
         OpenSSL::SSL
         OpenSSL::Crypto
-        webrtc::webrtc
+        unofficial::webrtc::webrtc
         ${FFMPEG_LIBRARIES}
 )
 
